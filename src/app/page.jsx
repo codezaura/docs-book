@@ -1,6 +1,7 @@
 import { Container } from "@/components/layout/core";
 import { Header } from "@/components/layout/header";
 import { Button } from "@/components/ui/button";
+import { paths } from "@/routes/paths";
 import { BookOpen, Braces, Heart } from "lucide-react";
 import Link from "next/link";
 
@@ -24,7 +25,7 @@ export default function Home() {
           </h2>
 
           <div className="md:mt-12 flex gap-4">
-            <Link href="/docs/introduction">
+            <Link href={paths.docs.gettingStarted.welcome}>
               <Button size="lg">
                 <BookOpen />
                 Start Learning

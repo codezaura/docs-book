@@ -15,8 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "DocsBook",
-  description:
-    "DocsBook is built for developers to centralize the knowledge of programming and development.",
+  description: "Your Gateway to Mastering Programming & Development Concepts.",
 };
 
 export default function RootLayout({ children }) {

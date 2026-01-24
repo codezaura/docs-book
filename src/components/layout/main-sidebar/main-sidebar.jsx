@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Telescope, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 import {
   Sidebar,
@@ -23,19 +23,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { Logo } from "@/components/logo";
-
-// -----------------------------------------------------------------------
-
-const items = [
-  {
-    title: "Getting Started",
-    icon: Telescope,
-    children: [
-      { title: "Introduction", url: "/docs/introduction" },
-      { title: "Pre-Knowledge", url: "/docs/pre-knowledge" },
-    ],
-  },
-];
+import { NavConfigs } from "./nav-configs";
 
 // -----------------------------------------------------------------------
 
@@ -51,7 +39,7 @@ export function MainSidebar() {
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => {
+              {NavConfigs.map((item) => {
                 // Check if any child URL matches the current pathname
                 const isActive = item.children?.some(
                   (child) => pathname === child.url,

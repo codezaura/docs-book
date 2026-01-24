@@ -21,9 +21,12 @@ export function Logo() {
         <path d="m16 18 6-6-6-6" />
         <path d="m8 6-6 6 6 6" />
       </svg>
-      <span className="text-xl font-sans tracking-tighter text-zinc-700 dark:text-zinc-50">
+      <span className="text-xl font-sans flex items-center tracking-tighter text-zinc-700 dark:text-zinc-50">
         <span className="font-medium text-zinc-950">Docs</span>
         Book
+        <span className="ml-1 text-xs tracking-normal px-1 py-0.5 bg-rose-600 text-white rounded-sm">
+          alpha
+        </span>
       </span>
     </Link>
   );
