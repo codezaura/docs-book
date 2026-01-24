@@ -1,6 +1,5 @@
 import { Logo } from "@/components/logo";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 // -----------------------------------------------------------------------
 
@@ -9,7 +8,7 @@ export function Header({ hideLogo = false, slots, className }) {
     <header className="sticky top-0 z-50 w-full border-b border-zinc-200 bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/80">
       <div
         className={cn(
-          "mx-auto flex h-16 max-w-6xl items-center justify-between px-6",
+          "mx-auto flex h-16 max-w-6xl items-center justify-between px-4",
           className,
         )}
       >

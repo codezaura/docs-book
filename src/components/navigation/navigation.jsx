@@ -42,7 +42,14 @@ function NavigationPrevious({ href, title }) {
 
 // -----------------------------------------------------------------------
 
-export const Navigation = {
-  Next: NavigationNext,
-  Previous: NavigationPrevious,
-};
+function Navigation({ children }) {
+  return (
+    <div className="mt-16 mb-8 flex flex-col md:flex-row gap-4">{children}</div>
+  );
+}
+
+Navigation.Next = NavigationNext;
+
+Navigation.Previous = NavigationPrevious;
+
+export { Navigation };

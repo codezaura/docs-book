@@ -19,7 +19,7 @@ export default function DocsLayout({ children }) {
     <Container maxWidth="full" disablePadding>
       <SidebarProvider>
         <MainSidebar />
-        <main className="w-full">
+        <div className="w-full">
           <Header
             hideLogo
             className="max-w-full md:px-14"
@@ -29,7 +29,7 @@ export default function DocsLayout({ children }) {
           {children}
 
           <Footer />
-        </main>
+        </div>
       </SidebarProvider>
     </Container>
   );
