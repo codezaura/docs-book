@@ -1,35 +1,27 @@
+import { Logo } from "@/components/logo";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 // -----------------------------------------------------------------------
 
-export function Header() {
+export function Header({ hideLogo = false, slots, className }) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-zinc-200 bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/80">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-2 group">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="text-zinc-700"
-          >
-            <path d="m16 18 6-6-6-6" />
-            <path d="m8 6-6 6 6 6" />
-          </svg>
-          <span className="text-xl font-sans tracking-tighter text-zinc-700 dark:text-zinc-50">
-            <span className="font-medium text-zinc-950">Docs</span>
-            Book
-          </span>
-        </Link>
+      <div
+        className={cn(
+          "mx-auto flex h-16 max-w-6xl items-center justify-between px-6",
+          className,
+        )}
+      >
+        <div className="flex gap-6 items-center">
+          {!hideLogo && <Logo />}
+
+          {slots?.leftAreaEnd}
+        </div>
 
         {/* Right: Actions & GitHub */}
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-6">
+          {slots?.rightAreaStart}
           {/* Quick Search Trigger (Visual only) */}
           {/* <button className="hidden lg:flex items-center gap-2 rounded-md border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-sm text-zinc-400 dark:border-zinc-800 dark:bg-zinc-900">
             <svg

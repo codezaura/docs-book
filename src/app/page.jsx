@@ -24,7 +24,7 @@ export default function Home() {
           </h2>
 
           <div className="md:mt-12 flex gap-4">
-            <Link href="/learn">
+            <Link href="/docs/introduction">
               <Button size="lg">
                 <BookOpen />
                 Start Learning
