@@ -10,8 +10,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "docs/core",
-        destination: "docs/core/source-file",
+        source: "/docs/core",
+        destination: "/docs/core/source-file",
         permanent: true,
       },
     ];
