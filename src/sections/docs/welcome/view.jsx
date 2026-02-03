@@ -9,13 +9,9 @@ export function WelcomeView() {
   return (
     <Main>
       <div className="flex-1">
-        <h1>
-          <a href="#welcome">Welcome</a>
-        </h1>
+        <h1 id="welcome">Welcome</h1>
 
-        <p className="mt-3">
-          Your Gateway to Mastering Programming & Development Concepts
-        </p>
+        <p>Your Gateway to Mastering Programming & Development Concepts</p>
 
         <p>
           <span className="font-medium italic">DocsBook</span>-alpha is a
@@ -24,9 +20,9 @@ export function WelcomeView() {
           accessible, engaging, and practical — no matter your experience level.
         </p>
 
-        <h3 className="mt-8">Quick overview</h3>
+        <h3>Quick overview</h3>
 
-        <p className="mt-1">
+        <p>
           Unlock the world of programming with clear explanations, real-world
           examples, and deep dives into core concepts — from{" "}
           <code>JavaScript</code> &<code>React</code> to <code>Node.js</code>,{" "}

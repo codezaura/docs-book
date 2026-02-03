@@ -1,5 +1,5 @@
 import { paths } from "@/routes/paths";
-import { Telescope, GitPullRequestArrow, MonitorCog, Cpu } from "lucide-react";
+import { Telescope, BrainCircuit, MonitorCog, Cpu } from "lucide-react";
 
 export const NavConfigs = [
   {
@@ -8,6 +8,10 @@ export const NavConfigs = [
     children: [
       { title: "Welcome", url: paths.docs.gettingStarted.welcome },
       { title: "Pre Knowledge", url: paths.docs.gettingStarted.preKnowledge },
+      {
+        title: "Core knowledge",
+        url: paths.docs.gettingStarted.coreKnowledge,
+      },
     ],
   },
   {

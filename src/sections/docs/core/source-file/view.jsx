@@ -10,8 +10,8 @@ export function CoreSourceFileView() {
       <div className="flex-1">
         <Navigation>
           <Navigation.Previous
-            title="Pre Knowledge"
-            href={paths.docs.gettingStarted.preKnowledge}
+            title="Core Knowledge"
+            href={paths.docs.gettingStarted.coreKnowledge}
           />
           <Navigation.Next
             title="Text Editor"

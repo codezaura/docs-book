@@ -7,6 +7,7 @@ export const paths = {
     gettingStarted: {
       welcome: `${DOCS_ROOT}/welcome`,
       preKnowledge: `${DOCS_ROOT}/pre-knowledge`,
+      coreKnowledge: `${DOCS_ROOT}/core-knowledge`,
     },
 
     // Core
